@@ -1,0 +1,15 @@
+
+
+$transform: uppercase, lowercase, capitalize;
+@each $i in $transform {
+  .text-#{$i} {
+    text-transform: $i;
+  }
+}
+
+$align: left, center, right, justify;
+@each $i in $align {
+  .text-#{$i} {
+    text-align: $i;
+  }
+}

@@ -1,0 +1,20 @@
+.d-flex {
+	display: flex;
+}
+.flex-column {
+	flex-direction: column;
+}
+
+$justify: start, center, end, space-between, space-around, space-evenly;
+@each $i in $justify {
+	.justify-#{$i} {
+		justify-content: $i;
+	}
+}
+
+$align: start, center, end, space-between, space-around, space-evenly;
+@each $i in $justify {
+	.align-#{$i} {
+		align-items: $i;
+	}
+}

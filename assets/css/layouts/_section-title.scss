@@ -1,0 +1,29 @@
+.section-title{
+    h4{
+        font-size: 35px;
+        line-height: 45px;
+        display: inline-block;
+        position: relative;
+        &:before, &:after{
+            content: "";
+            position: absolute;
+            background-color: #ff7720;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &:before {            
+            width: 80px;
+            height: 2px;            
+            bottom: 0;            
+        }
+        &:after {
+            width: 10px;
+            height: 10px;
+            bottom: -3px;
+            border-radius: 50%;
+        }
+    }
+    p{
+
+    }
+}

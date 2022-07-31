@@ -1,0 +1,64 @@
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+    }
+}
+
+$grid-columns: 12;
+$grid-xxl-breakpoint: 1400px;
+$grid-xl-breakpoint: 1200px;
+$grid-lg-breakpoint: 1000px;
+$grid-md-breakpoint: 800px;
+
+@media only screen and (min-width: $grid-xxl-breakpoint ) {
+    .container{
+        width: 1320px;
+    }
+    @for $i from 1 through 12 {
+        .col-xxl-#{$i}{
+            width: (100 / 12) * $i * 1%;
+            padding: 0 15px;
+        }
+    }
+}
+
+@media only screen and (min-width: $grid-xl-breakpoint ) and (max-width: $grid-xxl-breakpoint) {
+    .container{
+        width: 1170px;
+    }
+    @for $i from 1 through 12 {
+        .col-xl-#{$i}{
+            width: (100 / 12) * $i * 1%;
+            padding: 0 15px;
+        }
+    }
+}
+
+@media only screen and (min-width: $grid-lg-breakpoint ) and (max-width: $grid-xl-breakpoint) {
+    .container{
+        width: 970px;
+    }
+    @for $i from 1 through 12 {
+        .col-lg-#{$i}{
+            width: (100 / 12) * $i * 1%;
+            padding: 0 15px;
+        }
+    }
+}
+
+@media only screen and (min-width: $grid-md-breakpoint ) and (max-width: $grid-lg-breakpoint) {
+    .container{
+        width: 970px;
+    }
+    @for $i from 1 through 12 {
+        .col-md-#{$i}{
+            width: (100 / 12) * $i * 1%;
+            padding: 0 15px;
+        }
+    }
+}
