@@ -1,0 +1,43 @@
+.footer-area {
+	background-color: #333;
+	color: #fff;
+	.container {
+		.row {
+			border-bottom: 1px solid rgb(73, 73, 73);
+			padding-bottom: 60px;
+			.footer-logo {
+				h4 {
+					font-size: 36px;
+					line-height: 46px;
+					a {
+						color: #fff;
+						text-transform: capitalize;
+					}
+				}
+				p {
+					width: 70%;
+				}
+			}
+			.footer-links,
+			.footer-socials {
+				h4 {
+					font-size: 18px;
+					line-height: 28px;
+				}
+				ul {
+					li {
+						a {
+							color: #fff;
+							&:hover {
+								color: #ff7720;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.copyright {
+		color: rgb(100, 100, 100);
+	}
+}
