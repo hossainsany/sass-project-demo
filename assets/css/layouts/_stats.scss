@@ -1,31 +1,26 @@
 .stats-area {
 	background-color: #000;
-	.container {
-		.row {
-			.col-xxl-12 {
-				.section-title {
-					color: #fff;
-				}
-			}
-			.col-xxl-3 {
-				flex-direction: column;
-				color: #fff;
-				i {
-					background-color: #ff7720;
-					height: 50px;
-					width: 50px;
-					line-height: 50px;
-					text-align: center;
-					font-size: 20px;
-					display: inline-block;
-					margin-bottom: 10px;
-				}
-				span {
-					font-size: 30px;
-					font-weight: 500;
-					line-height: 40px;
-				}
-			}
+
+	.section-title {
+		color: #fff;
+	}
+
+	.single-stat {
+		color: #fff;
+		i {
+			background-color: #ff7720;
+			height: 50px;
+			width: 50px;
+			line-height: 50px;
+			text-align: center;
+			font-size: 20px;
+			display: inline-block;
+			margin-bottom: 10px;
+		}
+		span {
+			font-size: 30px;
+			font-weight: 500;
+			line-height: 40px;
 		}
 	}
 }
